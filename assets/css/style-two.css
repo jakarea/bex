@@ -265,6 +265,7 @@ A. Reset Styling Start
 
   .form-submit .btn-edit {
     border: 0;
+    cursor: pointer;
   }
 
   .form-later {

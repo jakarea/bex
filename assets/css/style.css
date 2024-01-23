@@ -1150,6 +1150,12 @@ input[type="date"]::placeholder {
   gap: 10px;
 }
 
+.form-step-box .resume-updated .resume-delete a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .form-step-box .resume-updated .resume-delete p{
   display: flex;
   align-items: center;
