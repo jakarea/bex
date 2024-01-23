@@ -795,6 +795,23 @@ body {
   align-items: center;
 }
 
+.login-main-wrapper .login-form-wrap-second  .form-group .maxmini-section::-webkit-inner-spin-button {
+  display: none;
+}
+
+::-webkit-calendar-picker-indicator { background-color:white}
+input[type=date]{
+  font-size:16px;
+  font-weight: 300;
+}
+
+::-webkit-calendar-picker-indicator{ 
+      background-image: url(../images/icons/calendar.svg);
+      background-position:center;
+       background-size:20px 20px;
+       background-repeat:no-repeat;
+}
+
 .login-main-wrapper .login-form-wrap-second  .form-group .maxmini-section .line {
   width: 10px;
   height: 2px;
@@ -846,7 +863,65 @@ input[type="date"]::placeholder {
   padding: 4px !important;
 }
 
+.radio {
+  display: none;
+}
+
+.file-box label {
+  display: flex;
+  padding: 6px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  border-radius: 8px;
+  border: 1px solid var(--Neutral-Color-Neutral-40, #C5CCD8);
+  background: var(--White, #FFF);
+  color: var(--Neutral-Color-Neutral-60, #66768E);
+  font-family: 'Manrope', sans-serif;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.3px;
+  }
+
+  #one:checked ~ .label-one,
+  #two:checked ~ .label-two,
+  #three:checked ~ .label-three,
+  #four:checked ~ .label-four,
+  #five:checked ~ .label-five,
+  #six:checked ~ .label-six,
+  #seven:checked ~ .label-seven {
+    border-radius: 8px;
+    background: #276CF4;
+    color: #fff;
+  }
+
+  #one-km:checked ~ .label-one,
+  #two-km:checked ~ .label-two,
+  #three-km:checked ~ .label-three,
+  #four-km:checked ~ .label-four,
+  #five-km:checked ~ .label-five,
+  #six-km:checked ~ .label-six,
+  #seven-km:checked ~ .label-seven {
+    border-radius: 8px;
+    background: #276CF4;
+    color: #fff;
+  }
+
+
+
+
 /*login three end*/
+
+
+
+
+
+
 
 /*login four start*/
 .login-main-wrapper .login-form-wrap-second .workexperience-thumbnail {
@@ -967,6 +1042,11 @@ input[type="date"]::placeholder {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+.login-main-wrapper .login-form-wrap-second .attach-file-section .resume-updated .resume-delete a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .login-main-wrapper .later-btn-wrapper {
