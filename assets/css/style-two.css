@@ -482,7 +482,11 @@ A. Reset Styling Start
   .login-main-wrapper .login-form-wrap .form-group input::placeholder {
     color: var(--Neutral-Color-Neutral-50, #A6B1C4);
   }
-
+  ::-webkit-calendar-picker-indicator { background-color:white}
+  input[type=date]{
+    font-size:16px;
+    font-weight: 300;
+  }
 
   /*login form three start*/
   .login-main-wrapper .login-form-wrap .login-from .form-group-left .form-group .work-option  {

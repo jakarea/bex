@@ -267,8 +267,9 @@
           <p>Please enter the necessary information.</p>
         </div>
         <!-- form start -->
-        <form action="" class="login-from">
-          <div class="personal-info">
+        <form action="" class="login-from login-from-two">
+
+          <div class="form-container-left">
           <div class="form-group-left">
             <div class="form-group form-error">
               <label for="fname">First Name</label>
@@ -276,11 +277,9 @@
             </div>
             <div class="form-group form-error">
               <label for="date">Date of Birth</label>
-              <input type="date" placeholder="dd-mm-yyyy" id="date" name="date" class="form-control">
+              <input type="date" class="birth-date" placeholder="dd-mm-yyyy">
             </div>
           </div>
-        </div>
-
           <div class="form-group-right">
             <div class="form-group form-error">
               <label for="lname">Last Name</label>
@@ -319,6 +318,13 @@
               </div>
           </div>
           </div>
+          </div>
+
+          <div class="address-details">
+            <h4>Address & Contact Details</h4>
+          </div>
+
+          <div class="form-container-right">
           <div class="form-group-left">
             <div class="form-group form-error">
               <label for="fname">Country</label>
@@ -351,12 +357,14 @@
               <input type="number" placeholder="+31612345678" id="number" name="number" class="form-control">
             </div>
           </div>
+          </div>
+
         </form>
         <!-- form end -->
     </div>
     <div class="form-submit">
-      <button type="submit" class="btn-submit btn-back"><img src="assets/images/icons/chevron-left.svg"alt="Icon" class="fluid">Go back</button>
-      <button type="submit" class="btn-submit">Next Step <img src="assets/images/icons/chevron-right.svg"alt="Icon" class="fluid"></button>  
+      <button type="submit" class="btn-submit btn-back"><img src="assets/images/icons/chevron-left.svg"alt="Icon" class="fluid"/>Go back</button>
+      <button type="submit" class="btn-submit">Next Step <img src="assets/images/icons/chevron-right.svg"alt="Icon" class="fluid"/></button>  
     </div>
    </div> 
   </div>

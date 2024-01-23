@@ -522,8 +522,21 @@ body {
 .login-main-wrapper .login-form-wrap .login-from {
   display: grid;
   grid-template-columns: 50% 50%;
-  padding: 0rem 2rem;
+  padding: 0 0;
   gap: 1.5rem;
+}
+.login-main-wrapper .login-form-wrap .login-from .form-container-left {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0 0;
+    gap: 1.5rem;
+}
+
+.login-main-wrapper .login-form-wrap .login-from .form-container-right {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0 0;
+    gap: 1.5rem;
 }
 
 .login-main-wrapper .login-form-wrap {
@@ -543,7 +556,7 @@ body {
 
 .form-group-right,
 .form-group-left {
-  width: 100%;
+  width: 95% !important;
 }
 
 .login-main-wrapper .login-form-wrap .login-header {
@@ -656,7 +669,7 @@ body {
   font-weight: 600;
   line-height: 160%;
   border: 0;
-  cursor: pointer;
+  cursor: pointer !important;
   transition: ease-in-out .3s;
 }
 
@@ -693,6 +706,17 @@ body {
   letter-spacing: 0.2px;
 }
 
+.form-group .birth-date {
+  width: 100%;
+  display: flex;
+  padding: 10px 0px;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  border: 0;
+  border-bottom: 1px solid var(--Neutral-Color-Neutral-30, #E5ECF6);
+}
+
 .login-main-wrapper .form-submit-second {
   display: flex;
   align-items: center;
@@ -710,6 +734,7 @@ body {
   font-weight: 600;
   line-height: 160%;
   padding: 12px 10px;
+  cursor: pointer;
 }
 
 .address-contact-section {
@@ -727,7 +752,26 @@ body {
   border-bottom: 1px solid #D0D5DD;
 }
 
+.address-details {
+  border-bottom: 1px solid #D0D5DD;
+  padding-top: 8px;
+}
 
+.address-details h4{
+  color: var(--Light-Text-Primary, #242936);
+  font-family: 'Manrope', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  padding-bottom: 1rem;
+}
+
+.login-from-two {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1rem;
+}
 /*login-two details end*/
 
 /*login three start*/
@@ -880,7 +924,7 @@ input[type="date"]::placeholder {
   color: var(--Neutral-Color-Neutral-60, #66768E);
   font-family: 'Manrope', sans-serif;
   text-align: center;
-  font-family: Manrope;
+  font-family: 'Manrope', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -911,9 +955,6 @@ input[type="date"]::placeholder {
     background: #276CF4;
     color: #fff;
   }
-
-
-
 
 /*login three end*/
 
@@ -1377,6 +1418,105 @@ p {
   margin-top: 130px;
   padding-bottom: 50px;
 }
+
+.container-modal {
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+/* .open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+} */
+
+.popup {
+  display: inline-flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 370px;
+  height: 452px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.10);
+  border-radius: 12px;
+  background: var(--White, #FFF);
+  transition: transform 0.4s, top 0.4s;
+  box-shadow: 0px 8px 8px -4px rgba(16, 24, 40, 0.04), 0px 20px 24px -4px rgba(16, 24, 40, 0.10);
+}
+
+.popup h2 {
+  background: linear-gradient(90deg, #276CF4 32.35%, #03B0FE 70.99%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: 'Manrope', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.popup p {
+  color: var(--Neutral-Color-Neutral-60, #66768E);
+  text-align: center;
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+}
+
+.popup .popup-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+.popup .popup-btn .cancel{
+  color: var(--Neutral-Color-Neutral-70, #2F3A4C);
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  display: flex;
+  padding: 10px 18px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  border-radius: 8px;
+  border: 1px solid var(--Gray-300, #D0D5DD);
+  background: var(--White, #FFF);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+.popup .popup-btn .confirm{
+  color: var(--White, #FFF);
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  display: flex;
+  padding: 10px 18px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  border-radius: 8px;
+  border: 1px solid #276CF4;
+  background: #276CF4;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
 /*login five end*/
 
 /*sarch job list home page start============================================================*/
@@ -1397,7 +1537,7 @@ p {
 
 .search-job-wrap .search-job-container .search-subtitle h2 {
   color: var(--White, #FFF);
-  font-family: Manrope;
+  font-family: 'Manrope', sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 500;

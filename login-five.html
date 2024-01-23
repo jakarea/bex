@@ -262,12 +262,10 @@
   <div class="login-main-wrapper mt-50">
     <div class="login-container">
       <div class="login-form-wrap">
-
         <div class="login-header">
           <h4>Check and Send</h4>
           <p>Please check your all information.</p>
-        </div>
-        
+        </div>        
         <!-- personal information box start -->
         <div class="form-step-box">
           <h4>Personal Information</h4>
@@ -632,13 +630,11 @@
         
       </div>
       <div class="form-submit">
-        <button type="submit" class="btn btn-back btn-edit"><img src="assets/images/icons/pencil-alt.svg" alt="">Edit Information</button>
-        <button  type="submit" class="btn-submit">Complete<img src="assets/images/icons/check-circle-two.svg" alt=""></button>  
+        <button type="submit" class="btn-back btn-edit"><img src="assets/images/icons/pencil-alt.svg" alt="">Edit Information</button>
+        <button  type="submit" class="btn btn-submit">Complete<img src="assets/images/icons/check-circle-two.svg" alt=""></button>  
       </div>
     </div>
-
   <!--login details end-->
-
   <!-- footer section start -->
   <footer class="footer-section">
     <div class="footer-container">
@@ -806,8 +802,21 @@
     </div>
   </footer>
   <!-- footer section end -->
-
-
+    <!--modal started -->
+    <div class="container-modal">
+    <div class="popup" id="popup">
+      <div class="popup-content">
+      <img src="assets/images/vacancies/Sitting.svg" class="fluid" alt=""/>
+      <h2>Congratulations</h2>
+      <p>Your profile is ready and set</p>
+    </div>
+      <div class="popup-btn">
+        <button class="cancel">Cancel</button>
+        <button class="confirm" type="">Confirm</button>
+      </div>
+    </div>
+  </div>
+  <!--modal ended-->
   <!-- notify list show hide js -->
   <script>
     const notifyButton = document.getElementById('notifyButton');
@@ -822,6 +831,15 @@
         notifyButton.classList.toggle('active');
       }
     });
+
+    // let popup = document.getElementById("popup");
+
+    // function openPopup(){
+    //   popup.classList.add("open-popup");
+    // }
+    // function closePopup(){
+    //   popup.classList.remove("open-popup");
+    // }
 
   </script>
 
