@@ -868,8 +868,8 @@ input[type=date]{
 ::-webkit-calendar-picker-indicator{ 
       background-image: url(../images/icons/calendar.svg);
       background-position:center;
-       background-size:20px 20px;
-       background-repeat:no-repeat;
+      background-size:20px 20px;
+      background-repeat:no-repeat;
 }
 
 .login-main-wrapper .login-form-wrap-second  .form-group .maxmini-section .line {
@@ -1349,7 +1349,6 @@ input[type="date"]::placeholder {
 }
 
 .login-main-wrapper,
-
 .login-form-wrap-last,
 .experience-profile-info,
 .experience-profile,
@@ -1435,17 +1434,140 @@ p {
   padding-bottom: 50px;
 }
 
-.container-modal {
+.modal-container {
+  position: relative;
+  width: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1;
+}
+
+.modal-container .modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 24px;
+  width: 371px;
+  height: 500px;
+  border-radius: 12px;
+  background: var(--White, #FFF);
+  box-shadow: 0px 8px 8px -4px rgba(16, 24, 40, 0.04), 0px 20px 24px -4px rgba(16, 24, 40, 0.10);
+  animation-name: animatemodal;
+  animation-duration: 0.4s;
+}
+
+.modal-container .modal-content img{
+  width: 100%;
+  object-fit: cover;
+}
+
+@keyframes animatemodal {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}
+
+.modal-container .modal-content h2 {
+  text-align: center;
+  font-family: 'Manrope', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  background: linear-gradient(90deg, #276CF4 32.35%, #03B0FE 70.99%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.modal-container .modal-content p{
+  color: var(--Neutral-Color-Neutral-60, #66768E);
+  text-align: center;
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  padding-top: 12px;
+}
+
+.modal-container .modal-content .modal-grp-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 2rem;
+}
+
+.modal-container .modal-content .modal-grp-btn .btn-cancel{
+  color: var(--Neutral-Color-Neutral-70, #2F3A4C);
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  display: flex;
+  padding: 10px 18px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  border-radius: 8px;
+  border: 1px solid var(--Gray-300, #D0D5DD);
+  background: var(--White, #FFF);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.modal-container .modal-content .modal-grp-btn .btn-confirm{
+  color: var(--White, #FFF);
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  display: flex;
+  padding: 10px 18px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  border-radius: 8px;
+  border: 1px solid #276CF4;
+  background: #276CF4;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.modal-container#blur.active {
+  pointer-events: none;
+  user-select: none;
+}
+
+/* .container-modal {
   position: absolute;
   top: 0;
   left: 50%;
+  visibility: hidden;
+  transform: translate(-50%, -50%) scale(0.1);
 }
 
-/* .open-popup {
+.open-popup {
   visibility: visible;
-  top: 50%;
+  top: 100%;
   transform: translate(-50%, -50%) scale(1);
-} */
+}
 
 .popup {
   display: inline-flex;
@@ -1454,11 +1576,11 @@ p {
   align-items: center;
   gap: 32px;
   width: 370px;
-  height: 452px;
+  height: 475px;
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.10);
+  top: 100%;
+  left: 0;
+  z-index: 99999;
   border-radius: 12px;
   background: var(--White, #FFF);
   transition: transform 0.4s, top 0.4s;
@@ -1531,7 +1653,7 @@ p {
   border: 1px solid #276CF4;
   background: #276CF4;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-}
+} */
 
 /*login five end*/
 

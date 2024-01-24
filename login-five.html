@@ -631,7 +631,7 @@
       </div>
       <div class="form-submit">
         <button type="submit" class="btn-back btn-edit"><img src="assets/images/icons/pencil-alt.svg" alt="">Edit Information</button>
-        <button  type="submit" class="btn btn-submit">Complete<img src="assets/images/icons/check-circle-two.svg" alt=""></button>  
+        <button  type="submit" class="btn btn-submit" id="open-popup">Complete<img src="assets/images/icons/check-circle-two.svg" alt=""></button>  
       </div>
     </div>
   <!--login details end-->
@@ -802,21 +802,24 @@
     </div>
   </footer>
   <!-- footer section end -->
+
+
     <!--modal started -->
-    <div class="container-modal">
-    <div class="popup" id="popup">
-      <div class="popup-content">
-      <img src="assets/images/vacancies/Sitting.svg" class="fluid" alt=""/>
-      <h2>Congratulations</h2>
-      <p>Your profile is ready and set</p>
-    </div>
-      <div class="popup-btn">
-        <button class="cancel">Cancel</button>
-        <button class="confirm" type="">Confirm</button>
+    <div class="modal-container" id="modal-container">
+      <div class="modal-content" id="modal-content">
+        <!-- <span id="close-btn">&times;</span> -->
+        <img src="assets/images/login-design.png" class="fluid" alt=""/>
+        <h2>Congratulations</h2>
+        <p>Your profile is ready and set</p>
+        <div class="modal-grp-btn">
+          <button type="" class="btn-cancel" id="close-btn">Cancel</button>
+          <button type="submit"  class="btn-confirm">Confirm</button>
+        </div>
       </div>
     </div>
-  </div>
-  <!--modal ended-->
+    <!--modal ended-->
+
+
   <!-- notify list show hide js -->
   <script>
     const notifyButton = document.getElementById('notifyButton');
@@ -832,14 +835,28 @@
       }
     });
 
-    // let popup = document.getElementById("popup");
+    // select the open-popup button
+    let openBtn = document.getElementById('open-popup');
+    // select the modal-background
+    let modalBackground = document.getElementById('modal-container');
+    // select the close-btn 
+    let closeBtn = document.getElementById('close-btn');
 
-    // function openPopup(){
-    //   popup.classList.add("open-popup");
-    // }
-    // function closePopup(){
-    //   popup.classList.remove("open-popup");
-    // }
+    // shows the modal when the user clicks open-popup
+    openBtn.addEventListener('click', function() {
+      modalBackground.style.display = 'block';
+    });
+
+    // hides the modal when the user clicks close-btn
+    closeBtn.addEventListener('click', function() {
+      modalBackground.style.display = 'none';
+    });
+
+    // window.addEventListener('click', function(event) {
+    //   if (event.target === modalBackground) {
+    //     modalBackground.style.display = 'none';
+    //   }
+    // });
 
   </script>
 
