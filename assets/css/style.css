@@ -562,6 +562,9 @@ body {
 .login-main-wrapper .login-form-wrap .login-header {
   border-bottom: 1px solid var(--Neutral-Color-Neutral-20, #F1F4F9);
   padding: 0rem 2rem 0.75rem 2rem;
+}
+
+.login-main-wrapper .login-form-wrap .login-header-four {
   display: flex;
   align-items: center;
   justify-content: space-between;
