@@ -1797,6 +1797,78 @@ p {
 }
 /*home page employee list end===========================================================*/
 
+/*After Registration home page employee list start===========================================================*/
+.registration-vacancy-wrap {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: flex-start !important;
+}
+
+.latest-vacancy-container {
+  margin-top: 110px !important;
+}
+
+.regis-vacancy-list {
+  width: 331px !important;
+  height: 106px !important;
+  padding: 32px !important;
+  border-radius: 8px;
+  border: 1px solid var(--Neutral-Color-Neutral-20, #F1F4F9);
+  background: var(--White, #FFF);
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.12);
+}
+.latest-vacancy-btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.latest-vacancy-btn  button{
+  color: var(--Primary, #276CF4);
+  font-family: 'Manrope', sans-serif;  
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.3px;
+  display: flex;
+  height: 54px;
+  padding: 12px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid var(--Primary, #276CF4);
+  background: #F8F9FA;
+  transition: .4s ease-in-out;
+}
+.latest-vacancy-btn  button:hover {
+  color: #fff;
+  background-color: #000000;
+}
+.saveJob-vacancy-box {
+  margin-top: 3rem;
+}
+
+.save-employee-subtitle {
+  margin-top: 1rem;
+}
+
+.save-employee-title .save-employee-line .popular-line{
+  height: 10px;
+  width: 130px;
+  margin-top: -10px;
+  margin-left: -70px !important;
+}
+
+.register-vacancy-employee-wrap {
+  margin-top: 110px !important;
+}
+/*After Registration home page employee list end===========================================================*/
+
+
 /*Popular Vacancies Start============*/
 .vacancy-employee-wrap {
   position: relative;
