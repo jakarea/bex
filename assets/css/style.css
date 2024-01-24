@@ -562,7 +562,9 @@ body {
 .login-main-wrapper .login-form-wrap .login-header {
   border-bottom: 1px solid var(--Neutral-Color-Neutral-20, #F1F4F9);
   padding: 0rem 2rem 0.75rem 2rem;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .login-main-wrapper .login-form-wrap .login-header h4 {
@@ -581,6 +583,17 @@ body {
   font-weight: 400;
   line-height: 160%;
   letter-spacing: 0.2px;
+}
+
+.login-main-wrapper .login-form-wrap .login-header button {
+  display: flex;
+  padding: 7px 0px 7px 12px;
+  align-items: center;
+  gap: 4px;
+  color: #276CF4;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
 }
 
 .login-main-wrapper .login-form-wrap .form-group {
