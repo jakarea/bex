@@ -1860,12 +1860,14 @@ p {
   align-items: center;
 }
 
-.popular-vacancy-wrap .vacancy-thumbnail a {
+.popular-vacancy-wrap .vacancy-thumbnail button {
   width: 42px;
   height: 42px;
   border-radius: 50%;
   background-color: #F2F7FF;
   display: flex;
+  border: 0;
+  cursor: pointer;
   justify-content: center;
   align-items: center;
 }
