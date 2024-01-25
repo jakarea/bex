@@ -530,10 +530,6 @@ body {
 }
 /*login main section start*/
 
-.login-main-section {
-
-}
-
 .login-main-container {
   max-width: 70rem;
 }
@@ -584,10 +580,6 @@ body {
 .loginmain-logo-container .angle-login {
   position: absolute;
   left: 0;
-}
-
-.loginmain-logo-container .login-logo {
-  
 }
 
 .loginmain-left h2 {
@@ -816,7 +808,7 @@ body {
 }
 
 .login-main-wrapper .login-form-wrap .login-header {
-  border-bottom: 1px solid var(--Neutral-Color-Neutral-20, #F1F4F9);
+  border-bottom: 1px solid var(--Neutral-Color-Neutral-20, #D0d5DD);
   padding: 0rem 2rem 0.75rem 2rem;
 }
 
@@ -891,6 +883,7 @@ body {
 
 .login-main-wrapper .login-form-wrap .form-group input::placeholder {
   color: var(--Neutral-Color-Neutral-50, #A6B1C4);
+  font-weight: 300 !important;
 }
 
 .login-main-wrapper .login-form-wrap .option-text {
@@ -934,6 +927,10 @@ body {
   letter-spacing: 0.2px;
 }
 
+.form-submit {
+  margin-top: 6rem;
+}
+
 .form-submit .btn-submit {
   display: inline-flex;
   padding: 10px 24px;
@@ -944,7 +941,7 @@ body {
   color: var(--White, #FFF);
   font-size: 14px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 160%;
   border: 0;
   cursor: pointer !important;
@@ -979,7 +976,7 @@ body {
   color: var(--Neutral-Color-Neutral-50, #A6B1C4);
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 160%;
   letter-spacing: 0.2px;
 }
@@ -1110,7 +1107,7 @@ body {
 .login-main-wrapper .login-form-wrap-second  .form-group .maxmini-section {
   width: 560px;
   border-bottom: 1px solid var(--Neutral-Color-Neutral-30, #E5ECF6);
-  margin-top: 8px;
+  margin-top: -10px !important;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1152,6 +1149,10 @@ input[type=date]{
   gap: 80px;
 }
 
+.login-main-wrapper .login-form-wrap-second  .form-group .maxmini-section input::placeholder {
+  padding: 0 !;
+}
+
 input[type="date"] {
   color: var(--Neutral-Color-Neutral-50, #A6B1C4);
   font-size: 16px;
@@ -1166,7 +1167,7 @@ input[type="date"]::placeholder {
   color: var(--Neutral-Color-Neutral-50, #A6B1C4) !important;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 160%;
   letter-spacing: 0.2px;
 }
@@ -1341,6 +1342,9 @@ input[type="date"]::placeholder {
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
 .login-main-wrapper .login-form-wrap-second .attach-file-section .resume-updated span {
@@ -1401,7 +1405,8 @@ input[type="date"]::placeholder {
 
 .login-main-wrapper .login-form-wrap-second .attach-file-section .upload-container .upload-file {
   border-radius: 8px;
-  border: 1px dashed #276CF4;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='8' ry='8' stroke='%23276CF4FF' stroke-width='2' stroke-dasharray='12%2c 18' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e") !important;
+  /* border-radius: 8px; */
   background: #F1F4F9;
   display: flex;
   padding: 1rem;
@@ -1487,7 +1492,7 @@ input[type="date"]::placeholder {
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 .form-step-box .form-group-area {

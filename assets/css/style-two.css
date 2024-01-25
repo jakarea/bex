@@ -321,7 +321,7 @@ A. Reset Styling Start
     color: #2272F9;
     font-size: 14px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 160%;
     display: flex;
     padding: 10px 24px;
@@ -373,7 +373,7 @@ A. Reset Styling Start
   }
   
   .login-main-wrapper .login-form-wrap .login-header {
-    border-bottom: 1px solid var(--Neutral-Color-Neutral-20, #F1F4F9);
+    border-bottom: 1px solid var(--Neutral-Color-Neutral-20, #D0d5dd);
     padding: 0rem 2rem 0.75rem 2rem;
     
   }
@@ -481,7 +481,9 @@ A. Reset Styling Start
   
   .login-main-wrapper .login-form-wrap .form-group input::placeholder {
     color: var(--Neutral-Color-Neutral-50, #A6B1C4);
+    font-weight: 300 !important;
   }
+  
   ::-webkit-calendar-picker-indicator { background-color:white}
   input[type=date]{
     font-size:16px;
