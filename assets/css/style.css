@@ -333,7 +333,6 @@ body {
   right: -1rem;
   top: 3rem;
   z-index: 9999;
-  /* width: max-content; */
   border-radius: 0.75rem;
   border: 1px solid var(--Light-Grey-01, #F3F3F3);
   background: var(--White, #FFF);
@@ -927,8 +926,8 @@ body {
   letter-spacing: 0.2px;
 }
 
-.form-submit {
-  margin-top: 6rem;
+.form-submit-five {
+  margin-top: 6rem !important;
 }
 
 .form-submit .btn-submit {
@@ -1886,13 +1885,14 @@ p {
   border: 0;
 }
 
-.search-job-wrap .search-job-container .search-list-wrapper .search-list-left input::placeholder {
+.search-list-wrapper .search-list-left input::placeholder {
   color: var(--Neutral-Color-Neutral-60, #66768E);
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300 !important;
   line-height: 160%;
   letter-spacing: 0.2px;
+  font-family: 'Manrope', sans-serif;
 }
 
 .search-job-wrap .search-job-container .search-list-wrapper .search-list-middle{
@@ -1908,8 +1908,18 @@ p {
 }
 
 .search-job-wrap .search-job-container .search-list-wrapper .search-list-middle input {
-  width: 70%;
+  width: 66% !important;
   border: 0;
+}
+
+.search-list-wrapper .search-list-middle input::placeholder {
+  font-weight: 300 !important;
+  color: var(--Neutral-Color-Neutral-60, #66768E);
+  font-size: 16px;
+  font-style: normal;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  font-family: 'Manrope', sans-serif;
 }
 
 .search-job-wrap .search-job-container .search-list-wrapper .search-list-middle .dropdown {
@@ -1928,7 +1938,8 @@ p {
     line-height: 150%;
     letter-spacing: 0.3px;
     z-index: 9999;
-    padding: 16px 5px;
+    padding: 16px 15px;
+    border-left: 1px solid #E5ECF6;
 }
 
 .search-job-wrap .search-job-container .search-list-wrapper .search-list-middle .dropdown .search-item-list {
@@ -1962,10 +1973,12 @@ p {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   background-color: #fff;
+  border-left: 0 !important;
 }
 .search-job-wrap .search-job-container .search-list-wrapper .search-list-middle .dropdown .search-item-list .search-item:last-child .item-link {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-left: 0 !important;
 }
 
 .search-job-wrap .search-job-container .search-list-wrapper .search-list-middle .dropdown .search-item-list .search-item .item-link {
@@ -1978,7 +1991,8 @@ p {
     line-height: 160%;
     display: block;
     transition: ease-in-out .3s;
-    padding: 10px 25px;
+    padding: 10px 32px;
+    border-left: 0 !important;
 }
 
 .search-job-wrap .search-job-container .search-list-wrapper .search-list-middle input::placeholder {
@@ -2036,11 +2050,16 @@ p {
 .top-employee-wrap .top-employee-container .top-employee-title h2 {
   color: var(--Neutral-Color-Neutral-90, #101C2D);
   text-align: center;
-  font-family: Manrope;
+  font-family: 'Manrope', sans-serif;
   font-size: 40px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 150%;
+}
+
+.top-employee-wrap .top-employee-container .top-employee-title .top-employee-line-two img{
+    margin-top: -10px;
+    margin-left: 260px !important;
 }
 
 .top-employee-wrap .top-employee-container .top-employee-title span {
@@ -2066,7 +2085,7 @@ p {
   text-align: center;
   font-size: 18px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 150%;
 }
 .top-employee-wrap .top-employee-container .vacancy-list-wrap {
@@ -2091,7 +2110,7 @@ p {
 }
 .top-employee-wrap .top-employee-container .vacancy-list-wrap .vacancy-list h5 {
   color: var(--Neutral-Color-Neutral-60, #66768E);
-  font-family: Manrope;
+  font-family: 'Manrope', sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -4558,6 +4577,7 @@ input:checked + label span {
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
+  font-family: 'Manrope', sans-serif;
   letter-spacing: 0.0125rem;
 }
 

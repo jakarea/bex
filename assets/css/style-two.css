@@ -339,7 +339,7 @@ A. Reset Styling Start
 
   .form-submit .btn-back {
     color: #2272F9;
-    font-family: Manrope;
+    font-family: 'Manrope', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -364,7 +364,7 @@ A. Reset Styling Start
   .form-group-left,
  [input="date"]::placeholder{
     color: var(--Neutral-Color-Neutral-50, #A6B1C4);
-    font-family: Manrope;
+    font-family: 'Manrope', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -483,7 +483,7 @@ A. Reset Styling Start
     color: var(--Neutral-Color-Neutral-50, #A6B1C4);
     font-weight: 300 !important;
   }
-  
+
   ::-webkit-calendar-picker-indicator { background-color:white}
   input[type=date]{
     font-size:16px;
