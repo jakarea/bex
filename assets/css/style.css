@@ -205,6 +205,18 @@ body {
   margin-top: 2rem;
 }
 
+.mt-6 {
+  margin-top: 3rem;
+}
+
+.mt-7 {
+  margin-top: 4rem;
+}
+
+.mt-8 {
+  margin-top: 5rem;
+}
+
 .pt-2 {
   padding-top: 2rem;
 }
@@ -1555,15 +1567,8 @@ p {
   user-select: none;
 }
 
-/* .container-modal {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  visibility: hidden;
-  transform: translate(-50%, -50%) scale(0.1);
-}
 
-.open-popup {
+/* .open-popup {
   visibility: visible;
   top: 100%;
   transform: translate(-50%, -50%) scale(1);
@@ -1653,7 +1658,7 @@ p {
   border: 1px solid #276CF4;
   background: #276CF4;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-} */
+} */ */
 
 /*login five end*/
 
@@ -1987,6 +1992,18 @@ p {
 
 .register-vacancy-employee-wrap {
   margin-top: 110px !important;
+}
+
+.popular-regis-line img {
+  margin-top: -6px !important;
+}
+
+.latest-employee-line img {
+  margin-top: -6px;
+}
+
+.regis-employee-line img {
+  
 }
 /*After Registration home page employee list end===========================================================*/
 
