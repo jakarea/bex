@@ -2019,10 +2019,6 @@ p {
 .latest-employee-line img {
   margin-top: -6px;
 }
-
-.regis-employee-line img {
-  
-}
 /*After Registration home page employee list end===========================================================*/
 
 
@@ -2177,15 +2173,15 @@ p {
 }
 .area-employee-title h2{
   color: var(--White, #FFF) !important;
-  font-family: Manrope;
+  font-family: 'Manrope', sans-serif;
   font-size: 48px !important;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 600 !important;
   line-height: 150%;
 }
 .area-employee-title span {
   color: var(--Light-Yellow, #FFBF3E) !important;
-  font-family: Manrope;
+  font-family: 'Manrope', sans-serif;
   font-size: 48px !important;
   font-style: normal;
   font-weight: 800;
@@ -2195,10 +2191,10 @@ p {
 .area-employee-subtitle p {
   color: var(--White, #FFF) !important;
   text-align: center;
-  font-family: Manrope;
+  font-family: 'Manrope', sans-serif;
   font-size: 18px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400 !important;
   line-height: 150%;
 }
 .areas-expert-box-wrap {
