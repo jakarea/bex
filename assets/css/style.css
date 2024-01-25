@@ -600,6 +600,12 @@ body {
   letter-spacing: 0.2px;
 }
 
+.login-from-first {
+  display: grid;
+  padding: 2rem !important;
+  grid-template-columns: repeat(2,1fr);
+}
+
 .login-main-wrapper .login-form-wrap .login-header button {
   display: flex;
   padding: 7px 0px 7px 12px;
@@ -1567,6 +1573,18 @@ p {
   user-select: none;
 }
 
+.file-checkbox-wrapper {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  flex-wrap: nowrap !important;
+  justify-content: flex-start !important;
+}
+
+.filebox-check label{
+  padding: 0;
+  border: 0;
+}
 
 /* .open-popup {
   visibility: visible;
@@ -3769,7 +3787,7 @@ p {
 .transport-file-box p{
   color: var(--Neutral-Color-Neutral-80, #1C2636);
   font-family: 'Manrope', sans-serif;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
