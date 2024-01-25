@@ -745,11 +745,12 @@ body {
   width: 100%;
   background: var(--White, #FFF);
   border: 1px solid #276CF4;
+  border-top: 1px solid var(--Light-Blue, #01C0FE);
   box-shadow: 0px 4px 14px 0px rgba(55, 90, 215, 0.20);
 }
 
 .create-account-box a{
-  color: var(--Primary, #276CF4);
+  color: var(--Primary-Gradiant, #276CF4);
   font-family: 'Manrope', sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -1828,98 +1829,6 @@ p {
   padding: 0;
   border: 0;
 }
-
-/* .open-popup {
-  visibility: visible;
-  top: 100%;
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.popup {
-  display: inline-flex;
-  padding: 24px;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-  width: 370px;
-  height: 475px;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 99999;
-  border-radius: 12px;
-  background: var(--White, #FFF);
-  transition: transform 0.4s, top 0.4s;
-  box-shadow: 0px 8px 8px -4px rgba(16, 24, 40, 0.04), 0px 20px 24px -4px rgba(16, 24, 40, 0.10);
-}
-
-.popup h2 {
-  background: linear-gradient(90deg, #276CF4 32.35%, #03B0FE 70.99%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-  font-family: 'Manrope', sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 130%;
-}
-
-.popup p {
-  color: var(--Neutral-Color-Neutral-60, #66768E);
-  text-align: center;
-  font-family: 'Manrope', sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 160%;
-}
-
-.popup .popup-btn {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  width: 100%;
-}
-.popup .popup-btn .cancel{
-  color: var(--Neutral-Color-Neutral-70, #2F3A4C);
-  font-family: 'Manrope', sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 160%;
-  letter-spacing: 0.2px;
-  display: flex;
-  padding: 10px 18px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  flex: 1 0 0;
-  border-radius: 8px;
-  border: 1px solid var(--Gray-300, #D0D5DD);
-  background: var(--White, #FFF);
-  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-}
-.popup .popup-btn .confirm{
-  color: var(--White, #FFF);
-  font-family: 'Manrope', sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 160%;
-  letter-spacing: 0.2px;
-  display: flex;
-  padding: 10px 18px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  flex: 1 0 0;
-  border-radius: 8px;
-  border: 1px solid #276CF4;
-  background: #276CF4;
-  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-} */ */
 
 /*login five end*/
 
