@@ -1417,6 +1417,21 @@ input[type="date"]::placeholder {
   margin: 1rem 2rem 0;
 }
 
+.login-main-wrapper .login-form-wrap-second .attach-file-section-second .upload-container .upload-file {
+  border-radius: 8px;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='8' ry='8' stroke='%23276CF4FF' stroke-width='2' stroke-dasharray='12%2c 18' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e") !important;
+  /* border-radius: 8px; */
+  background: #F1F4F9;
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex: 1 0 0;
+  align-self: stretch;
+  margin: 1rem 2rem 0;
+}
+
 .login-main-wrapper .login-form-wrap-second .attach-file-section .upload-container .upload-file span {
   padding: 1rem 0;
   display: flex;
