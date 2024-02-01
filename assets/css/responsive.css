@@ -43,6 +43,56 @@
     margin-top: 76px !important;
     padding: 1.25rem;
   }
+
+   /*login form first start*/
+  .login-main-wrapper .login-form-wrap .login-from {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem !important;
+    padding: 1rem !important;
+  }
+
+  .login-main-wrapper .login-form-wrap {
+    padding: 1.5rem 0rem 1rem 0rem !important;
+  }
+   /*login form first end*/
+   /*login form second start*/
+.login-main-wrapper .login-form-wrap .login-from .form-container-left {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0;
+  gap: 1.5rem;
+}
+.login-main-wrapper .login-form-wrap .login-from .form-container-right {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0;
+  gap: 1.5rem;
+}
+.form-group-right .button-option .option-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+/*login form second end*/
+/*login form third start*/
+.login-main-wrapper .login-form-wrap-second .form-group {
+  width: 100%;
+}
+.login-main-wrapper .login-form-wrap-second .form-group .maxmini-section {
+  width: 100%;
+}
+.login-main-wrapper .login-form-wrap-second .connect-social-section {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.login-main-wrapper .login-form-wrap-second .login-form .personal-info .form-group-right{
+  width: 100% !important;
+}
+
+/*login form third end*/  
+
 }
 @media (min-width: 575px) and (max-width: 767px) {
   .root-main-wrapper .sidebar-wrap {
@@ -68,6 +118,51 @@
   .root-main-wrapper .header-area .header-icons-box ul li a.user i {
     font-size: 0.675rem;
   }
+
+    /*login form first start*/
+  .login-main-wrapper .login-form-wrap .login-from {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem !important;
+    padding: 1rem !important;
+  }
+
+  .login-main-wrapper .login-form-wrap {
+    padding: 1.5rem 0rem 1rem 0rem !important;
+  }
+   /*login form first end*/
+     /*login form second start*/
+.login-main-wrapper .login-form-wrap .login-from .form-container-left {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0;
+  gap: 1.5rem;
+}
+.login-main-wrapper .login-form-wrap .login-from .form-container-right {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0;
+  gap: 1.5rem;
+}
+.form-group-right .button-option .option-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+  /*login form second end*/
+  /*login form third start*/
+.login-main-wrapper .login-form-wrap-second .form-group {
+  width: 100%;
+}
+.login-main-wrapper .login-form-wrap-second .form-group .maxmini-section {
+  width: 100%;
+}
+.login-main-wrapper .login-form-wrap-second .connect-social-section {
+  grid-template-columns: repeat(1, 1fr);
+}
+/*login form third end*/     
+
 }
 @media (min-width: 767px) and (max-width: 991px) {
   .root-main-wrapper .sidebar-wrap {
@@ -93,6 +188,56 @@
   .root-main-wrapper .header-area .header-icons-box ul li a.user i {
     font-size: 0.675rem;
   }
+  /*login form first start*/
+
+  .login-main-wrapper .login-form-wrap .login-from {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem !important;
+    padding: 1rem !important;
+  }
+
+  .login-main-wrapper .login-form-wrap .login-from .form-group-left {
+    width: 100% !important;
+  }
+
+  .login-main-wrapper .login-form-wrap {
+    padding: 1.5rem 0rem 1rem 0rem !important;
+  }
+  
+  /*login form first end*/
+  /*login form second start*/
+.login-main-wrapper .login-form-wrap .login-from .form-container-left {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0;
+  gap: 1.5rem;
+}
+.login-main-wrapper .login-form-wrap .login-from .form-container-right {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0;
+  gap: 1.5rem;
+}
+.form-group-right .button-option .option-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+/*login form second end*/
+/*login form third start*/
+.login-main-wrapper .login-form-wrap-second .form-group {
+  width: 100%;
+}
+.login-main-wrapper .login-form-wrap-second .form-group .maxmini-section {
+  width: 100%;
+}
+.login-main-wrapper .login-form-wrap-second .connect-social-section {
+  grid-template-columns: repeat(1, 1fr);
+}
+/*login form third end*/ 
+
 }
 @media (min-width: 991px) and (max-width: 1199px) {
   .auth-txt-box {
@@ -112,4 +257,14 @@
   .main-page-wrapper {
     margin-left: 264px;
   }
+}
+
+@media (min-width: 1200px) and (max-width: 1350px) {
+
+
+}
+
+@media (min-width: 1351px) {
+
+
 }
