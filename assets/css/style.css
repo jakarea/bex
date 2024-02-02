@@ -152,14 +152,66 @@ body {
 }
 
 .main-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--black-color);
+  z-index: 999;
   width: 100%;
   padding-bottom: 2rem;
   background: linear-gradient(261deg, #03B0FE -33.01%, #276CF4 112.82%);
 }
 
-.heander-navigation-wrap {
+.header-navigation-wrap {
   width: 100%;
 }
+
+.nav_toggle {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.nav_burger {
+  width: 40px;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: opacity .1s, transform .4s;
+}
+.nav_close {
+  width: 30px;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  font-size: 1.25rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity .1s, transform .4s;
+}
+
+/* Show menu */
+.show-menu {
+  opacity: 1;
+  top: 3.5rem;
+  pointer-events: initial;
+}
+
+/* Show icon */
+.show-icon .nav_burger {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+.show-icon .nav_close {
+  opacity: 1;
+  transform: rotate(90deg);
+}
+
+
+
 
 .nav-container {
   width: 100%;
@@ -494,7 +546,7 @@ body {
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 160%;
+  line-height: 100%;
   height: 3rem;
   padding: 1rem;
 }
@@ -1854,7 +1906,7 @@ p {
 /*sarch job list home page start============================================================*/
 .search-job-wrap {
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 12rem;
 }
 .search-job-wrap .search-job-container {
   max-width: 73.125rem;

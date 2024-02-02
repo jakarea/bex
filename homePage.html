@@ -29,7 +29,7 @@
   <!-- main area start -->
   <main class="main-area pt-2">
     <!-- header menu start -->
-    <header class="heander-navigation-wrap">
+    <header class="header-navigation-wrap">
       <div class="nav-container">
         <div class="nav-inner-wrap">
           <!-- brand area start -->
@@ -41,7 +41,7 @@
           <!-- brand area end -->
 
           <!-- navbar menu start -->
-          <div class="navbar-nevigation">
+          <div class="navbar-nevigation show-menu" id="nav-menu">
             <ul class="menu">
               <li class="menu-item">
                 <a href="#" class="menu-link">
@@ -148,6 +148,11 @@
 
           <!-- navbar right bttns start -->
            <div class="navbar-login-bttns">
+          <!--toggle option started-->
+          <div class="nav_toggle" id="nav-toggle">
+            <img src="assets/images/icons/burger-menu.svg" class="nav_burger" alt=""/>
+            <img src="assets/images/icons/close-icon.svg" class="nav_close" alt=""/>
+        </div>
             <a href="#" class="login">Login</a>
             <a href="#" class="work">Work with us!</a>
            </div>
@@ -611,6 +616,23 @@
         notifyButton.classList.toggle('active');
       }
     });
+
+    // header responsive code integration
+    /*=============== SHOW MENU ===============*/
+    const showMenu = (toggleId, navId) =>{
+      const toggle = document.getElementById(toggleId),
+            nav = document.getElementById(navId)
+
+      toggle.addEventListener('click', () =>{
+          // Add show-menu class to nav menu
+          nav.classList.toggle('show-menu')
+
+          // Add show-icon to show and hide the menu icon
+          toggle.classList.toggle('show-icon')
+      })
+    }
+
+    showMenu('nav-toggle','nav-menu')
 
   </script>
 
