@@ -92,6 +92,9 @@
 }
 /*login form third end*/
 /*home after registration start*/
+.nav_burger {
+  width: 30px;
+}
 .search-job-wrap .search-job-container .search-list-wrapper {
   display: flex;
   flex-direction: column;
@@ -156,6 +159,7 @@
 .popular-vacancy-wrap {
   margin-top: 1rem;
 }
+
 .footer-menus-wrap {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -233,11 +237,6 @@
   margin-top: 1rem !important;
 }
 
-.popular-vacancy-wrap {
-  margin-top: 1rem;
-  margin: 1rem 1rem 0;
-}
-
 .company-logo {
   border-radius: 50%;
   width: 18%;
@@ -272,6 +271,15 @@
 }
 /*home after registration end*/ 
 /*home page start*/
+.header-navigation-wrap {
+  margin: 0 auto;
+  width: 95%;
+}
+
+.nav-brand a img {
+  max-width: 3.5rem;
+}
+
 .top-employee-wrap .top-employee-container .vacancy-list-wrap .vacancy-list {
     width: 350px;
     height: 60px;
@@ -719,8 +727,17 @@
   }
   /*header start*/
   .navbar-login-bttns a.login {
-    line-height: 90%;
-  }
+    color: #2272F9;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    height: 3rem;
+    display: flex;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
   .navbar-login-bttns a.work {
     height: 2.5rem;
     padding: 1rem;
@@ -742,7 +759,21 @@
 }
 
 /* @media (min-width: 1351px) {
-
+.top-employee-wrap .top-employee-container .vacancy-list-wrap .vacancy-list img{
+      max-width: 50%;
+}
+.top-employee-wrap .top-employee-container .vacancy-list-wrap .vacancy-list h5{
+      font-size: 18px;
+}
+.top-employee-wrap .top-employee-container .vacancy-list-wrap {
+    margin: 2rem 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.top-employee-wrap .top-employee-container .top-employee-title .top-employee-line img {
+    margin-left: 100px;
+}
 
 } */
 
@@ -759,6 +790,12 @@
       opacity: 1; */
       transition: top .4s, opacity .3s;
     }
+    .navbar-login-bttns a.work {
+      height: 2rem;
+      padding: 0.5rem;
+      margin-left: 0;
+      font-size: 0.500rem;
+  }
     .navbar-nevigation::-webkit-scrollbar {
       width: 0;
     }
@@ -779,39 +816,52 @@
     display: none !important;
   }
 
-    .menu {
-      background: #fff;
-      padding-top: 1rem;
-    }
-
-    .menu-link {
-      color: #266CF4 !important;
-      font-weight: 600;
-      padding: 1.25rem 1.5rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .menu-link:hover {
-      background: rgba(34, 114, 249, 0.10);
-    }
-
-    .nav-inner-wrap {
-      display: grid;
-      align-items: center;
-      grid-template-columns: 50% 50%;
+  .menu {
+    background: #fff;
+    padding-top: 1rem;
   }
-  .navbar-login-bttns {
+
+  .menu-link {
+    color: #266CF4 !important;
+    font-weight: 600;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu-link:hover {
+    background: rgba(34, 114, 249, 0.10);
+  }
+  .nav-brand a img {
+    max-width: 4rem;
+    object-fit: cover;
+}
+.header-navigation-wrap {
+  width: 95%;
+  margin: 0 auto;
+}
+
+  .nav-inner-wrap {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 40% 60%;
+    padding: 0.5rem 1rem;
+  }
+    .navbar-login-bttns {
     gap: 1rem;
-  }
-  .nav_close .show-menu {
+    }
+    .nav_close .show-menu {
     opacity: 1;
-  }
-  .show-menu {
-    opacity: 0;
+    width: 20px;
+    }
+    .show-menu {
+    display: none;
     top: 3.5rem;
     pointer-events: initial;
-  }
+    }
+    .nav-container {
+      height: auto;
+    }
 }
 
 /*menu for large desvice*/
@@ -834,46 +884,10 @@
     position: relative;
   }
 
-  /* .dropdown__menu, 
-  .dropdown__submenu {
-    max-height: initial;
-    overflow: initial;
-    position: absolute;
-    left: 0;
-    top: 6rem;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity .3s, top .3s;
-  } */
-
-  /* .dropdown__link, 
-  .dropdown__sublink {
-    padding-inline: 1rem 3.5rem;
-  } */
-
-  /* .dropdown__subitem .dropdown__link {
-    padding-inline: 1rem;
-  }
-
   .dropdown__submenu {
     position: absolute;
     left: 100%;
     top: .5rem;
-  } */
+  }
 
-  /* Show dropdown menu */
-  /* .dropdown__item:hover .dropdown__menu {
-    opacity: 1;
-    top: 5.5rem;
-    pointer-events: initial;
-    transition: top .3s;
-  } */
-
-  /* Show dropdown submenu */
-  /* .dropdown__subitem:hover > .dropdown__submenu {
-    opacity: 1;
-    top: 0;
-    pointer-events: initial;
-    transition: top .3s;
-  } */
 }

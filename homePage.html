@@ -15,6 +15,10 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Manrope:wght@200;400;500;600;700;800&display=swap"
     rel="stylesheet">
   <!-- google fonts -->
+  <!--owl slider start-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+  <!--owl slider end-->
 
   <!-- custom CSS start -->
   <link rel="stylesheet" href="assets/css/style.css">
@@ -209,6 +213,7 @@
             <p>Explore Prime Opportunities- Join Leading Companies through Bexs</p>
            </div>
            <div class="vacancy-list-wrap">
+
             <!--vacancy -list-->
             <div class="vacancy-list">
                 <h5>Vodafone</h5>
@@ -254,12 +259,6 @@
 
     <!--Popular Vacancies Start-->
     <div class="top-employee-wrap vacancy-employee-wrap">
-    <!--popular vacancy navigator start-->
-    <div class="vacancy-navigator">
-      <button class="btn-navigator left-arrow"><img src="assets/images/icons/left-arrow.svg" alt=""/></button>
-      <button class="btn-navigator right-arrow"><img src="assets/images/icons/right-arrow.svg" alt=""/></button>
-    </div>
-    <!--popular vacancy navigator end-->
       <div class="top-employee-container vacancy-employee-container">
          <div class="top-employee-title">
           <h2>Most Popular <span>Vacancies</span></h2>
@@ -270,8 +269,8 @@
          <div class="top-employee-subtitle">
           <p>Explore Best Opportunities for Starters and Junior Professionals</p>
          </div>
-          <!--popular vacancy list start-->
-          <div class="popular-vacancy-box">
+
+          <div id="owl-carousel" class="carousel owl-carousel popular-vacancy-box">
           <div class="popular-vacancy-wrap">
             <div class="vacancy-thumbnail">
               <img src="assets/images/vacancies/spotify.svg" class="fluid" alt=""/>
@@ -326,28 +325,18 @@
             </div>
           </div>
         </div>
-          <!--popular vacancy list end-->
-          <!--navigate circle start-->
-          <div class="navigate-circle">
-            <ul class="circle-list">
-              <li class="dot-line"></li>
-              <li class="dot"></li>
-              <li class="dot"></li>
-            </ul>
-          </div>
-          <!--navigate circle end-->
       </div>
   </div>
     <!--Popular Vacancies End-->
 
     <!--areas of expert start-->
-    <div class="top-employee-wrap vacancy-employee-wrap area-employee-wrap">
-      <!--areas experts navigator start-->
+    <!-- <div class="top-employee-wrap vacancy-employee-wrap area-employee-wrap">
+
       <div class="vacancy-navigator area-navigator">
         <button class="btn-navigator left-arrow"><img src="assets/images/icons/left-arrow.svg" alt=""/></button>
         <button class="btn-navigator right-arrow"><img src="assets/images/icons/right-arrow.svg" alt=""/></button>
       </div>
-      <!--areas experts navigator end-->
+
         <div class="top-employee-container areas-expert-container">
            <div class="top-employee-title area-employee-title">
             <h2>Explore Our <span>Areas of Expertise</span></h2>
@@ -358,9 +347,9 @@
            <div class="top-employee-subtitle area-employee-subtitle">
             <p>Discover Specialized Proficiency- Explore Our Diverse Areas of Expertise</p>
            </div>
-            <!--popular vacancy list start-->
+
             <div class="popular-vacancy-box areas-expert-box-wrap">
-              <!--area expert box start-->
+
               <div class="area-expert-box">
                 <img src="assets/images/icons/design.svg" class="fluid" alt=""/>
                 <div class="area-expert-box-title">
@@ -417,10 +406,9 @@
                 <p>652 jobs available<img src="assets/images/icons/area-right.svg" alt=""/></p>
               </div>
               </div>
-              <!--area expert box end-->
+
             </div>
-            <!--popular vacancy list end-->
-            <!--navigate circle start-->
+
             <div class="navigate-circle are-navigate-circle">
               <ul class="circle-list area-circle-list">
                 <li class="dot-line"></li>
@@ -428,9 +416,9 @@
                 <li class="dot"></li>
               </ul>
             </div>
-            <!--navigate circle end-->
+
         </div>
-    </div>
+    </div> -->
     <!--areas of expert end-->
   
   <!-- footer section start -->
@@ -603,6 +591,11 @@
 
 
   <!-- notify list show hide js -->
+  <!---jquery plugins added-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--owl carousel slider js start-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!--owl carousel slider js end-->
   <script>
     const notifyButton = document.getElementById('notifyButton');
     const notifyList = document.getElementById('notifyList');
@@ -632,8 +625,8 @@
       })
     }
     showMenu('nav-toggle','nav-menu')
-
   </script>
+  <script src="assets/js/main.js"></script>
 
 </body>
 

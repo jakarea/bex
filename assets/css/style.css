@@ -174,7 +174,7 @@ body {
 }
 
 .nav_burger {
-  width: 40px;
+  width: 30px;
   position: absolute;
   inset: 0;
   margin: auto;
@@ -246,6 +246,10 @@ body {
 }
 
 /* Handle on hover */
+.owl-carousel {
+  width: 100%;
+}
+
 .custom-scrl::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
@@ -2308,10 +2312,13 @@ p {
   margin-left: 270px !important;
 }
 .popular-vacancy-box {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 1rem;
+  margin: 0 0.5rem;
+  overflow: hidden;
 }
+
 .popular-vacancy-wrap {
   margin-top: 3rem;
   border-radius: 8px;
@@ -2319,12 +2326,25 @@ p {
   background: var(--General-Color-3, #FFF);
   box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.12);
   padding: 24px;
+  width: 100%;
 }
 
 .popular-vacancy-wrap .vacancy-thumbnail {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.popular-vacancy-wrap .vacancy-thumbnail img {
+  width: 25%;
+}
+
+.popular-vacancy-wrap .vacancy-thumbnail .heart-icon {
+  width: 55%;
+}
+
+.vacancy-list-item img {
+  width: 10% !important;
 }
 
 .popular-vacancy-wrap .vacancy-thumbnail button {
@@ -2379,6 +2399,34 @@ p {
 
 .popular-vacancy-wrap .vacancy-title-box .btn-vacancy img{
   margin-top: .3rem;
+  width: 1.5rem;
+}
+
+.owl-carousel .owl-stage-outer {
+  overflow: visible;
+}
+.owl-carousel .owl-nav.active{
+  display: block !important;
+}
+
+.owl-nav, .owl-dots {
+  opacity: 1 !important;
+  /* Add any other necessary styles */
+}
+
+.owl-dot {
+  height: 15px;
+  width: 45px;
+  margin: 0 5px;
+  outline: none;
+  border-radius: 14px;
+  border: 2px solid #0072bc!important;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+.owl-dots.active,
+.owl-dots:hover{
+  background: #0072bc!important;
 }
 
 .navigate-circle {
